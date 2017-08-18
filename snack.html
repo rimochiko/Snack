@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>贪吃蛇</title>
+<script src="main_snack.js"></script>
+<style type="text/css">
+*{padding:0;margin:0;}
+body
+{
+	width:900px;
+	margin:0px auto;
+	font-family:"Lucida Handwriting","微软雅黑";
+	color:#fff;
+}
+#bg
+{
+	width:800px;
+	height:500px;
+	margin:50px;
+	background:url(snack_bg.jpg) center center;
+	overflow:hidden;
+	position:relative;
+}
+.tips
+{
+	width:780px;
+	height:10px;
+	position:absolute;
+	padding:10px;
+	top:0;
+	left:0;
+}
+
+.score
+{
+	float:left;
+}
+
+#score
+{
+	float:left;
+	margin:-5px 10px;
+	font-size:20px;
+}
+#background
+{
+	width:600px;
+	height:400px;
+	margin:50px 100px;
+}
+.text
+{
+	position:absolute;
+	top:190px;
+	left:0;
+	width:800px;
+	height:120px;
+	text-align:center;
+	cursor:pointer;
+	font-size:60px;
+}
+
+</style>
+</head>
+
+<body>
+<div id="bg">
+	<div class="tips">
+    	<p class="score">Your Score:</p><p id="score">0</p>
+    </div>
+    
+	<canvas id="background" width="600" height="400">
+	</canvas>
+    
+    <canvas id="snake" width="600" height="400" style="position:absolute;top:50px;left:100px;">
+    </canvas>
+    
+    <canvas id="food" width="600" height="400" style="position:absolute;top:50px;left:100px;">
+    </canvas>
+    
+    <div id="btn" class="text">start the game</div>
+</div>
+</body>
+</html>
